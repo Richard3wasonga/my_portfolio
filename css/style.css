@@ -1,0 +1,361 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #1f242d;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+.navbar{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 25px 9%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.navbar .logo{
+    font-size: 30px;
+    font-weight: 700;
+    background: linear-gradient(to left, greenyellow, black);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   
+}
+.navbar ul{
+    display: flex;
+}
+.navbar ul li{
+    list-style: none;
+    margin-left: 35px;
+}
+.navnar ul li a {
+    font-size: 20px;
+    font-weight: 500;
+    transition: .5s;
+}
+.navbar ul li:hover a,
+.navbar ul li.active a{
+    color:greenyellow ;
+}
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    color: #fff;
+}
+.home-info h1{
+    font-size: 52px;
+    
+}
+.home-info h2{
+    display: inline-block;
+    font-size: 32px;
+    margin-top: -10px;
+    
+}
+.home-info h2 span{
+    position: relative;
+    display: inline-block;
+    color: transparent;
+    -webkit-text-stroke: .7px greenyellow ;
+    animation: display-text 16s linear infinite;
+    animation-delay: calc(-4s * var(--i));
+}
+@keyframes display-text{
+    25%,
+    100%{
+        display:none;
+    }
+}
+.home-info h2 span::before{
+    content: attr(data-text);
+    position: absolute;
+    width: 0;
+    border-right: 2px solid greenyellow;
+    color: greenyellow;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: fill-text 4s linear infinite;
+
+}
+@keyframes fill-text{
+    10%, 100%{
+        width: 0;
+    }
+    70%, 90%{
+        width: 100%;
+    }
+}
+
+.home-info p{
+    font-size: 16px;
+    margin:10px 0 25px
+}
+.home-info .btn-sci{
+    display: flex;
+    align-items: center;
+
+}
+.btn{
+    display: inline-block;
+    padding:10px 30px;
+    background: greenyellow;
+    border: 2px solid greenyellow;
+    border-radius: 40px;
+    box-lines: 0 0 10px greenyellow;
+    font-size: 16px;
+    color: #1f242d;
+    font-weight: 600;
+    transition: .5s;
+
+}
+.btn:hover{
+    background: transparent;
+    color: greenyellow;
+    box-shadow: none;
+}
+.home-info .btn-sci .sci{
+    margin-left: 20px;
+}
+.home-info .btn-sci .sci a{
+    display: inline-flex;
+    padding: 8px;
+    border: 2px solid greenyellow;
+    border-radius: 50%;
+    font-size:20px;
+    color: greenyellow;
+    margin: 0 8px;
+    transition: .5s;
+}
+.home-info .btn-sci .sci a:hover{
+    background: greenyellow;
+    color: #1f242d;
+    box-shadow: 0 0 10px;
+}
+.about h2{
+    color: #fff;
+    font-size: 30px;
+}
+#about{
+    color: greenyellow;
+    font-size: 50px;
+    
+
+}
+.about-m{
+    font-size: 30px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+    color: #fff;
+          
+    
+}
+.about-c{
+    margin-top: 10%;
+    
+    
+}
+#box-c{
+    font-size: 200px;
+    background: linear-gradient(to left, greenyellow, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-h{
+    font-size: 30px;
+    margin-top: 5%;
+    margin-bottom: 10%;
+    margin-left: 50%;
+    background: linear-gradient(to left, white, greenyellow);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    
+    
+    
+}
+.tnb{
+    font-size: 15px;
+    border: 2px solid ;
+    color: greenyellow;
+    background: transparent;
+    margin-left: 10px;
+    padding: 5px;
+    transition: .5s;
+    
+}
+.tnb:hover{
+    background: greenyellow;
+    color: black;
+
+}
+.service > table, tr{
+    border-collapse: collapse;
+    padding: 32px;
+    width: 85%;
+    th{
+      border: 2px solid black;
+           
+    }
+
+    
+}
+.bord{
+    border: 1px solid ;
+    font-size: 25px;
+    
+    background: linear-gradient(to left, greenyellow, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 25px;
+    border-collapse: collapse;
+    padding: 10px 30px;
+    margin-left: 400px;
+    
+
+    
+}
+.bord th{
+    padding: 30px 30px;
+}
+#service h2{
+    color: greenyellow;
+    font-size: 50px;
+    margin-top: 100px;
+
+}
+#service li{
+    color: #fff;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+#service li{
+    color: #fff;
+    font-weight: 800;
+    font-size: 20px;
+    list-style-type: lower-greek;
+
+}
+.home-img img{
+    width: 25vw;
+    height: 25vw;
+    border:5px solid greenyellow;
+    border-radius: 50%;
+    margin-left: 110%;
+}
+.skills h2{
+    color: greenyellow;
+    margin-top: 5%;
+    font-size: 50px;
+
+}
+.skills p{
+    color: #fff;
+    font-size: 30px;
+    margin-top: 5%;
+    margin-left: 40%;
+}
+.skills-c{
+    font-size: 40px;
+    margin-top: 10%;
+    display: flex;
+    justify-content: space-around;
+    background: linear-gradient(to left, greenyellow, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    
+}
+
+.contact{
+    margin-top: 5%;
+    
+}
+.contact h2{
+    color: greenyellow;
+    font-size: 50px;
+    margin-bottom: 5%;
+}
+.contact-container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.contact-left{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+.contact-left-title h2{
+    font-weight: 500;
+    color: greenyellow;
+    font-size: 48px;
+    margin-bottom: 5px;
+}
+.contact-left-title hr{
+    border: none;
+    width: 120px;
+    height: 5px;
+    background-color: greenyellow;
+    border-radius: 10px;
+    margin-bottom: 20px;
+
+}
+.contact-input{
+    width: 400px;
+    height: 50px;
+    border: none;
+    outline: none;
+    padding-left: 25px;
+    font-weight: 500;
+    color: black;
+    border-radius: 50px;
+}
+.contact-left textarea{
+    height: 140px;
+    padding-top: 15px;
+    border-radius: 20px;
+}
+.contact-input:focus{
+    border: 2px solid greenyellow;
+}
+.contact-input::placeholder{
+    color: yellowgreen;
+}
+.contact-left button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 18px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(to right,yellowgreen,black);
+    cursor: pointer;
+}
+.contact-left button a{
+    height: 15px;
+}
+.contact-right{
+    font-size: 400px;
+    
+}
+.contact-right a{
+    color: yellowgreen;
+}
+.hr-s{
+    margin: 100px 0px;
+}
